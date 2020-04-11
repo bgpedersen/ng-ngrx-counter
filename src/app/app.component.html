@@ -1,1 +1,13 @@
-app component
+<button mat-flat-button color="primary" (click)="increment()">Increment</button>
+<button mat-flat-button (click)="decrement()">Decrement</button>
+<button mat-flat-button color="warning" (click)="reset()">reset</button>
+
+<hr />
+
+<div>
+  <ng-container *ngIf="count$ | async as num; else none">
+    <span [innerText]="num"></span>
+  </ng-container>
+
+  <ng-template #none>0 items</ng-template>
+</div>
