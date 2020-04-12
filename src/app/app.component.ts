@@ -3,7 +3,7 @@ import { select, Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { decrement, increment, reset } from './actions/counter.actions';
 import { AppState } from './reducers';
-import { getCount } from './selectors/select.selectors';
+import { getCount } from './selectors/counter.selectors';
 
 @Component({
   selector: 'app-root',
